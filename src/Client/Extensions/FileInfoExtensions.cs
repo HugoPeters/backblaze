@@ -18,7 +18,12 @@ namespace Bytewizer.Backblaze.Extensions
         public static void SetContentDisposition(this FileInfo fileInfo, ContentDispositionHeaderValue value)
         {
             if (value != null)
-                fileInfo.Add("b2-content-disposition", value.ToString());
+            {
+                if (fileInfo.ContainsKey("X-Bz-Info-b2-content-disposition"))
+                    fileInfo["X-Bz-Info-b2-content-disposition"] = value.ToString();
+                else
+                    fileInfo.Add("X-Bz-Info-b2-content-disposition", value.ToString());
+            }
         }
 
         /// <summary>
@@ -27,7 +32,7 @@ namespace Bytewizer.Backblaze.Extensions
         /// <param name="fileInfo">The file info dictionary.</param>
         public static ContentDispositionHeaderValue GetContentDisposition(this FileInfo fileInfo)
         {
-            fileInfo.TryGetValue("b2-content-disposition", out string value);
+            fileInfo.TryGetValue("X-Bz-Info-b2-content-disposition", out string value);
             return ContentDispositionHeaderValue.Parse(value);
         }
 

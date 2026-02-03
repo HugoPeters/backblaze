@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Collections.Generic;
-
+using System.Net.Http.Headers;
 using Bytewizer.Backblaze.Extensions;
 
 namespace Bytewizer.Backblaze.Models
@@ -32,7 +32,7 @@ namespace Bytewizer.Backblaze.Models
         }
 
         /// <summary>
-        /// The bucket id the file will go in.  
+        /// The bucket id the file will go in.
         /// </summary>
         public string BucketId { get; private set; }
 
@@ -55,12 +55,26 @@ namespace Bytewizer.Backblaze.Models
         public string ContentType { get; set; } = "b2/x-auto";
 
         /// <summary>
-        /// The content has a last modified time concept.   
+        /// The content has a last modified time concept.
         /// </summary>
         public DateTime LastModified
         {
             get => FileInfo.GetLastModified();
             set => FileInfo.SetLastModified(value);
+        }
+
+        /// <summary>
+        /// If this is present B2 will use it as the value of the Content-Disposition header when the file is downloaded
+        /// unless it's overridden by a value given in the download request. Parameter continuations are not supported.
+        /// </summary>
+        /// <remarks>
+        /// Note that this file info will not be included in downloads as a x-bz-info-b2-content-disposition header.
+        /// Instead, it (or the value specified in a request) will be in the Content-Disposition
+        /// </remarks>
+        public ContentDispositionHeaderValue ContentDisposition
+        {
+            get => FileInfo.GetContentDisposition();
+            set => FileInfo.SetContentDisposition(value);
         }
 
         /// <summary>

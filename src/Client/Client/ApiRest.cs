@@ -189,7 +189,7 @@ namespace Bytewizer.Backblaze.Client
         #region Upload Stream
 
         /// <summary>
-        /// Uploads content by bucket id. 
+        /// Uploads content by bucket id.
         /// </summary>
         /// <param name="request">The upload file request content to send.</param>
         /// <param name="content">The upload content to receive.</param>
@@ -211,7 +211,7 @@ namespace Bytewizer.Backblaze.Client
                         var fileRequest = new UploadFileRequest(response.UploadUrl, request.FileName, response.AuthorizationToken)
                         {
                             ContentType = request.ContentType,
-                            FileInfo = request.FileInfo
+                            FileInfo = request.FileInfo,
                         };
 
                         return await UploadFileAsync(fileRequest, content, progress, cancel).ConfigureAwait(false);
@@ -237,7 +237,7 @@ namespace Bytewizer.Backblaze.Client
         #region Download Stream
 
         /// <summary>
-        /// Downloads the most recent version of content by bucket and file name. 
+        /// Downloads the most recent version of content by bucket and file name.
         /// </summary>
         /// <param name="request">The <see cref="DownloadFileByIdRequest"/> to send.</param>
         /// <param name="content">The download content to receive.</param>
@@ -268,7 +268,7 @@ namespace Bytewizer.Backblaze.Client
         }
 
         /// <summary>
-        /// Downloads a specific version of content by file id. 
+        /// Downloads a specific version of content by file id.
         /// </summary>
         /// <param name="request">The <see cref="DownloadFileByIdRequest"/> to send.</param>
         /// <param name="content">The download content to receive.</param>
@@ -304,7 +304,7 @@ namespace Bytewizer.Backblaze.Client
         #region Private Methods
 
         /// <summary>
-        /// Downloads the most recent version of a large file in chunked parts. 
+        /// Downloads the most recent version of a large file in chunked parts.
         /// </summary>
         /// <param name="request">The <see cref="DownloadFileByIdRequest"/> content to send.</param>
         /// <param name="results">The <see cref="DownloadFileResponse"/> results.</param>
@@ -335,7 +335,7 @@ namespace Bytewizer.Backblaze.Client
         }
 
         /// <summary>
-        /// Downloads the most recent version of a large file in chunked parts. 
+        /// Downloads the most recent version of a large file in chunked parts.
         /// </summary>
         /// <param name="request">The <see cref="DownloadFileByIdRequest"/> content to send.</param>
         /// <param name="results">The <see cref="DownloadFileResponse"/> results.</param>
@@ -366,7 +366,7 @@ namespace Bytewizer.Backblaze.Client
         }
 
         /// <summary>
-        /// Uploads a large file in chunked parts. 
+        /// Uploads a large file in chunked parts.
         /// </summary>
         /// <param name="request">The <see cref="UploadFileRequest"/> content to send.</param>
         /// <param name="progress">A progress action which fires every time the write buffer is cycled.</param>

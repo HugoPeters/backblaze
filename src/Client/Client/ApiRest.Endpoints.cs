@@ -57,7 +57,7 @@ namespace Bytewizer.Backblaze.Client
         #region b2_cancel_large_file
 
         /// <summary>
-        /// Cancels the upload of a large file and deletes all parts that have been uploaded. 
+        /// Cancels the upload of a large file and deletes all parts that have been uploaded.
         /// </summary>
         /// <param name="request">The <see cref="CancelLargeFileRequest"/> to send.</param>
         /// <param name="cancellationToken">The cancellation token to cancel operation.</param>
@@ -123,7 +123,7 @@ namespace Bytewizer.Backblaze.Client
         #region b2_create_bucket
 
         /// <summary>
-        /// Creates a new bucket belonging to the specified account. 
+        /// Creates a new bucket belonging to the specified account.
         /// </summary>
         /// <param name="request">The <see cref="CreateBucketRequest"/> to send.</param>
         /// <param name="cancellationToken">The cancellation token to cancel operation.</param>
@@ -167,7 +167,7 @@ namespace Bytewizer.Backblaze.Client
         #region b2_delete_bucket
 
         /// <summary>
-        /// Deletes the bucket specified. Only buckets that contain no version of any files can be deleted. 
+        /// Deletes the bucket specified. Only buckets that contain no version of any files can be deleted.
         /// </summary>
         /// <param name="request">The <see cref="DeleteBucketRequest"/> to send.</param>
         /// <param name="cancellationToken">The cancellation token to cancel operation.</param>
@@ -189,7 +189,7 @@ namespace Bytewizer.Backblaze.Client
         #region b2_delete_file_version
 
         /// <summary>
-        /// Deletes a specific version of a file. 
+        /// Deletes a specific version of a file.
         /// </summary>
         /// <param name="request">The <see cref="DeleteFileVersionRequest"/> to send.</param>
         /// <param name="cancellationToken">The cancellation token to cancel operation.</param>
@@ -211,7 +211,7 @@ namespace Bytewizer.Backblaze.Client
         #region b2_delete_key
 
         /// <summary>
-        /// Deletes the application key specified. 
+        /// Deletes the application key specified.
         /// </summary>
         /// <param name="request">The <see cref="DeleteKeyRequest"/> to send.</param>
         /// <param name="cancellationToken">The cancellation token to cancel operation.</param>
@@ -233,7 +233,7 @@ namespace Bytewizer.Backblaze.Client
         #region b2_download_file_by_id
 
         /// <summary>
-        /// Downloads a specific version of a file by file id without content.  
+        /// Downloads a specific version of a file by file id without content.
         /// </summary>
         /// <param name="request">The <see cref="DownloadFileByIdRequest"/> to send.</param>
         /// <param name="cancellationToken">The cancellation token to cancel operation.</param>
@@ -249,7 +249,7 @@ namespace Bytewizer.Backblaze.Client
         }
 
         /// <summary>
-        /// Downloads a specific version of a file by file id.  
+        /// Downloads a specific version of a file by file id.
         /// </summary>
         /// <param name="request">The <see cref="DownloadFileByIdRequest"/> to send.</param>
         /// <param name="content">The download content to receive.</param>
@@ -314,7 +314,7 @@ namespace Bytewizer.Backblaze.Client
         }
 
         /// <summary>
-        /// Downloads the most recent version of a file by name. 
+        /// Downloads the most recent version of a file by name.
         /// </summary>
         /// <param name="request">The <see cref="DownloadFileByNameRequest"/> to send.</param>
         /// <param name="content">The download content to receive.</param>
@@ -363,7 +363,7 @@ namespace Bytewizer.Backblaze.Client
         #region b2_finish_large_file
 
         /// <summary>
-        /// Converts file parts that have been uploaded into a single file. 
+        /// Converts file parts that have been uploaded into a single file.
         /// </summary>
         /// <param name="request">The <see cref="FinishLargeFileRequest"/> to send.</param>
         /// <param name="cancellationToken">The cancellation token to cancel operation.</param>
@@ -387,7 +387,7 @@ namespace Bytewizer.Backblaze.Client
         #region b2_get_download_authorization
 
         /// <summary>
-        /// Generate an authorization token that can be used to download files from a private bucket. 
+        /// Generate an authorization token that can be used to download files from a private bucket.
         /// </summary>
         /// <param name="request">The <see cref="GetDownloadAuthorizationRequest"/> to send.</param>
         /// <param name="cancellationToken">The cancellation token to cancel operation.</param>
@@ -405,7 +405,7 @@ namespace Bytewizer.Backblaze.Client
         #region b2_get_file_info
 
         /// <summary>
-        /// Gets information about a file. 
+        /// Gets information about a file.
         /// </summary>
         /// <param name="request">The <see cref="GetFileInfoRequest"/> to send.</param>
         /// <param name="cancellationToken">The cancellation token to cancel operation.</param>
@@ -423,7 +423,7 @@ namespace Bytewizer.Backblaze.Client
         #region b2_get_upload_part_url
 
         /// <summary>
-        /// Gets a url for uploading parts of a large file. 
+        /// Gets a url for uploading parts of a large file.
         /// </summary>
         /// <param name="request">The <see cref="GetUploadPartUrlRequest"/> to send.</param>
         /// <param name="cancellationToken">The cancellation token to cancel operation.</param>
@@ -436,7 +436,7 @@ namespace Bytewizer.Backblaze.Client
         }
 
         /// <summary>
-        /// Gets a url for uploading parts of a large file from memory cache. 
+        /// Gets a url for uploading parts of a large file from memory cache.
         /// </summary>
         /// <param name="request">The <see cref="GetUploadPartUrlRequest"/> to send.</param>
         /// <param name="cacheTTL">An absolute cache expiration time to live (TTL) relative to now.</param>
@@ -472,7 +472,7 @@ namespace Bytewizer.Backblaze.Client
         #region b2_get_upload_url
 
         /// <summary>
-        /// Gets a url for uploading files. 
+        /// Gets a url for uploading files.
         /// </summary>
         /// <param name="request">The get <see cref="GetUploadUrlRequest"/> to send.</param>
         /// <param name="cancellationToken">The cancellation token to cancel operation.</param>
@@ -485,7 +485,7 @@ namespace Bytewizer.Backblaze.Client
         }
 
         /// <summary>
-        /// Gets a url for uploading files from memory cache. 
+        /// Gets a url for uploading files from memory cache.
         /// </summary>
         /// <param name="request">The get <see cref="GetUploadUrlRequest"/> to send.</param>
         /// <param name="cacheTTL">An absolute cache expiration time to live (TTL) relative to now.</param>
@@ -521,7 +521,7 @@ namespace Bytewizer.Backblaze.Client
         #region b2_hide_file
 
         /// <summary>
-        /// Hides a file so that <see cref="DownloadFileByNameAsync(DownloadFileByNameRequest, Stream, IProgress{ICopyProgress}, CancellationToken)"/> will not find the file but previous versions of the file are still stored.   
+        /// Hides a file so that <see cref="DownloadFileByNameAsync(DownloadFileByNameRequest, Stream, IProgress{ICopyProgress}, CancellationToken)"/> will not find the file but previous versions of the file are still stored.
         /// </summary>
         /// <param name="request">The <see cref="HideFileRequest"/> content to send.</param>
         /// <param name="cancellationToken">The cancellation token to cancel operation.</param>
@@ -543,7 +543,7 @@ namespace Bytewizer.Backblaze.Client
         /// <summary>
         /// List buckets associated with an account in alphabetical order by bucket name. When using an authorization token
         /// that is restricted to a bucket you must include the <see cref="ListBucketsRequest.BucketId"/>
-        /// or <see cref="ListBucketsRequest.BucketName"/> of that bucket in the request or the request will be denied. 
+        /// or <see cref="ListBucketsRequest.BucketName"/> of that bucket in the request or the request will be denied.
         /// </summary>
         /// <param name="request">The <see cref="ListBucketsRequest"/> to send.</param>
         /// <param name="cancellationToken">The cancellation token to cancel operation.</param>
@@ -558,7 +558,7 @@ namespace Bytewizer.Backblaze.Client
         /// <summary>
         /// List buckets from memory cache associated with an account in alphabetical order by bucket name. When using an authorization token
         /// that is restricted to a bucket you must include the <see cref="ListBucketsRequest.BucketId"/>
-        /// or <see cref="ListBucketsRequest.BucketName"/> of that bucket in the request or the request will be denied. 
+        /// or <see cref="ListBucketsRequest.BucketName"/> of that bucket in the request or the request will be denied.
         /// </summary>
         /// <param name="request">The <see cref="ListBucketsRequest"/> to send.</param>
         /// <param name="cacheTTL">An absolute cache expiration time to live (TTL) relative to now.</param>
@@ -594,7 +594,7 @@ namespace Bytewizer.Backblaze.Client
         #region b2_list_file_names
 
         /// <summary>
-        /// List the names of all files in a bucket starting at a given name. 
+        /// List the names of all files in a bucket starting at a given name.
         /// </summary>
         /// <param name="request">The <see cref="ListFileNamesRequest"/> to send.</param>
         /// <param name="cancellationToken">The cancellation token to cancel operation.</param>
@@ -607,7 +607,7 @@ namespace Bytewizer.Backblaze.Client
         }
 
         /// <summary>
-        /// List the names of all files in a bucket starting at a given name from memory cache. 
+        /// List the names of all files in a bucket starting at a given name from memory cache.
         /// </summary>
         /// <param name="request">The <see cref="ListFileNamesRequest"/> to send.</param>
         /// <param name="cacheTTL">An absolute cache expiration time to live (TTL) relative to now.</param>
@@ -644,7 +644,7 @@ namespace Bytewizer.Backblaze.Client
 
         /// <summary>
         /// List all versions of the files contained in one bucket in alphabetical order by file name
-        /// and by reverse of date/time uploaded for versions of files with the same name. 
+        /// and by reverse of date/time uploaded for versions of files with the same name.
         /// </summary>
         /// <param name="request">The <see cref="ListFileVersionRequest"/> to send.</param>
         /// <param name="cancellationToken">The cancellation token to cancel operation.</param>
@@ -658,7 +658,7 @@ namespace Bytewizer.Backblaze.Client
 
         /// <summary>
         /// List all versions of the files contained in one bucket in alphabetical order by file name
-        /// and by reverse of date/time uploaded for versions of files with the same name. 
+        /// and by reverse of date/time uploaded for versions of files with the same name.
         /// </summary>
         /// <param name="request">The <see cref="ListFileVersionRequest"/> to send.</param>
         /// <param name="cacheTTL">An absolute cache expiration time to live (TTL) relative to now.</param>
@@ -694,7 +694,7 @@ namespace Bytewizer.Backblaze.Client
         #region b2_list_keys
 
         /// <summary>
-        /// List application keys associated with an account. 
+        /// List application keys associated with an account.
         /// </summary>
         /// <param name="request">The <see cref="ListKeysRequest"/> to send.</param>
         /// <param name="cancellationToken">The cancellation token to cancel operation.</param>
@@ -707,7 +707,7 @@ namespace Bytewizer.Backblaze.Client
         }
 
         /// <summary>
-        /// List application keys associated with an account from memory cache. 
+        /// List application keys associated with an account from memory cache.
         /// </summary>
         /// <param name="request">The <see cref="ListKeysRequest"/> to send.</param>
         /// <param name="cacheTTL">An absolute cache expiration time to live (TTL) relative to now.</param>
@@ -746,7 +746,7 @@ namespace Bytewizer.Backblaze.Client
         #region b2_list_parts
 
         /// <summary>
-        /// List parts that have been uploaded for a large file that has not been finished yet. 
+        /// List parts that have been uploaded for a large file that has not been finished yet.
         /// </summary>
         /// <param name="request">The <see cref="ListPartsRequest"/> to send.</param>
         /// <param name="cancellationToken">The cancellation token to cancel operation.</param>
@@ -759,7 +759,7 @@ namespace Bytewizer.Backblaze.Client
         }
 
         /// <summary>
-        /// List parts that have been uploaded for a large file that has not been finished yet from memory cache. 
+        /// List parts that have been uploaded for a large file that has not been finished yet from memory cache.
         /// </summary>
         /// <param name="request">The <see cref="ListPartsRequest"/> to send.</param>
         /// <param name="cacheTTL">An absolute cache expiration time to live (TTL) relative to now.</param>
@@ -844,7 +844,7 @@ namespace Bytewizer.Backblaze.Client
         #region b2_start_large_file
 
         /// <summary>
-        /// Prepares for uploading parts of a large file. 
+        /// Prepares for uploading parts of a large file.
         /// </summary>
         /// <param name="request">The <see cref="StartLargeFileRequest"/> to send.</param>
         /// <param name="cancellationToken">The cancellation token to cancel operation.</param>
@@ -881,7 +881,7 @@ namespace Bytewizer.Backblaze.Client
         #region b2_update_bucket
 
         /// <summary>
-        /// Update an existing bucket belonging to the specific account. 
+        /// Update an existing bucket belonging to the specific account.
         /// </summary>
         /// <param name="request">The <see cref="UpdateBucketRequest"/> to send.</param>
         /// <param name="cancellationToken">The cancellation token to cancel operation.</param>
@@ -903,7 +903,7 @@ namespace Bytewizer.Backblaze.Client
         #region b2_upload_file
 
         /// <summary>
-        /// Upload content stream to Backblaze B2 Cloud Storage. 
+        /// Upload content stream to Backblaze B2 Cloud Storage.
         /// </summary>
         /// <param name="request">The <see cref="UploadFileRequest"/> to send.</param>
         /// <param name="content"> The content stream of the content payload.</param>
@@ -924,8 +924,14 @@ namespace Bytewizer.Backblaze.Client
                var httpRequest = new HttpRequestMessage(HttpMethod.Post, request.UploadUrl);
 
                httpRequest.Headers.SetAuthorization(request.AuthorizationToken);
-               httpRequest.Headers.SetBzInfo(request.FileInfo);
+               // httpRequest.Headers.SetBzInfo(request.FileInfo);
                httpRequest.Headers.SetTestMode(Options.TestMode);
+
+               var contentDiposition = request.FileInfo.GetContentDisposition();
+               if (contentDiposition != null)
+               {
+                   httpRequest.Headers.Add("X-Bz-Info-b2-content-disposition", contentDiposition.ToString().ToUrlEncode());
+               }
 
                using (var httpContent = new ProgressStreamContent(content, progress, false))
                {
@@ -973,7 +979,7 @@ namespace Bytewizer.Backblaze.Client
         #region b2_upload_part
 
         /// <summary>
-        /// Uploads one part of a multi-part content stream using file id obtained from <see cref="StartLargeFileAsync"/>. 
+        /// Uploads one part of a multi-part content stream using file id obtained from <see cref="StartLargeFileAsync"/>.
         /// </summary>
         /// <param name="request">The <see cref="UploadPartRequest"/> to send.</param>
         /// <param name="content"> The content stream of the content payload.</param>
@@ -1108,7 +1114,7 @@ namespace Bytewizer.Backblaze.Client
 
                 response.Headers.GetBzInfo(fileResponse);
 
-                //TODO VerifyDownloadHash(fileResponse, content); 
+                //TODO VerifyDownloadHash(fileResponse, content);
 
                 return new ApiResults<DownloadFileResponse>(response, fileResponse);
             }
@@ -1159,7 +1165,7 @@ namespace Bytewizer.Backblaze.Client
         }
 
         /// <summary>
-        /// Creates HTTP content from serialized json object. 
+        /// Creates HTTP content from serialized json object.
         /// </summary>
         /// <typeparam name="T">Type to serialize.</typeparam>
         /// <param name="value">The string value (payload) to include.</param>

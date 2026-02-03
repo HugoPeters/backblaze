@@ -39,7 +39,7 @@ namespace Bytewizer.Backblaze.Extensions
         public static void SetContentDisposition(this HttpContentHeaders headers, ContentDispositionHeaderValue value)
         {
             if (value != null)
-                headers.Add("b2ContentDisposition", value.ToString());
+                headers.Add("X-Bz-Info-b2-content-disposition", value.ToString());
         }
 
         /// <summary>
