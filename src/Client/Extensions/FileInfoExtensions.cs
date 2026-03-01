@@ -32,7 +32,9 @@ namespace Bytewizer.Backblaze.Extensions
         /// <param name="fileInfo">The file info dictionary.</param>
         public static ContentDispositionHeaderValue GetContentDisposition(this FileInfo fileInfo)
         {
-            fileInfo.TryGetValue("X-Bz-Info-b2-content-disposition", out string value);
+            if (!fileInfo.TryGetValue("X-Bz-Info-b2-content-disposition", out string value))
+                return null;
+            
             return ContentDispositionHeaderValue.Parse(value);
         }
 
