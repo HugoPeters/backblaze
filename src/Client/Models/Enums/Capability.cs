@@ -149,6 +149,10 @@ namespace Bytewizer.Backblaze.Models
         /// <summary>
         /// Permission to write bucket logging information.
         /// </summary>
-        WriteBucketLogging
+        WriteBucketLogging,
+
+        WriteBucketLifecycleRules,
+        ReadBucketLifecycleRules
+
     }
 }
